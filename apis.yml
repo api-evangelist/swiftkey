@@ -1,7 +1,23 @@
 aid: swiftkey
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swiftkey.png
 name: Swiftkey
-description: 'Swiftkey is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'SwiftKey is a predictive on-screen keyboard for Android and iOS that uses machine learning
+  to improve autocorrect, next-word prediction, and swipe-to-type (SwiftKey Flow). Founded in London as
+  TouchType, it was acquired by Microsoft in 2016 and is now shipped as Microsoft SwiftKey. The former
+  SwiftKey SDK for embedding its prediction engine has been discontinued, and www.swiftkey.com now
+  permanently redirects to microsoft.com/swiftkey. As of this enrichment pass the product exposes no
+  public developer API, SDK registry package, or developer portal.'
 url: https://raw.githubusercontent.com/api-evangelist/swiftkey/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Keyboard
+- Predictive Text
+- Machine Learning
+- Mobile
+- Microsoft
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/swiftkey-domain-security.yml
 - type: Website
-  url: http://www.swiftkey.com
+  url: https://www.swiftkey.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
